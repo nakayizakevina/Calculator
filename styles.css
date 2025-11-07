@@ -3,4 +3,164 @@
     --Alpine-Goat: #F2F3F7;
     --White: #FFFFFF;
     --Umbra: #1F1F1F;
+    --Skinny-Jeans: #4E8AF8;
 }
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+.jost{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100;
+  font-style: normal;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Alpine-Goat);
+}
+
+main{
+    max-width: 430px;
+    height: 100%;
+    /* margin: auto; */
+    background-color:var(--White-Out);
+    font-family: "Jost", sans-serif;
+}
+
+.action{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.menu h4{
+    font-size: 25px;
+}
+
+.reset__btn{
+    border: none;
+    background-color:transparent;
+}
+
+.reset__btn--img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.nav__menu{
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    width:fit-content;
+    height: 25%;
+    padding: 12px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.nav__options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-icons{
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.results{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.results__options{
+    width: 100%;
+    height: 50px;
+}
+
+.question{
+    font-size: 20px;
+    font-weight: 200;
+    color: var(--Umbra);
+    /* text-align: end; */
+    padding-right:10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.answer{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Umbra);
+    text-align: end;
+    padding-right: 10px;
+    border: none;
+    background-color:transparent;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
+  background-color:var(--Alpine-Goat); 
+  width: 390px; 
+} 
+
+.cal__btns {
+  border: none;
+  background-color:var(--White);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+} 
+
+
+ .cal__btns--character {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+} 
+
+
+.cal__btns--img {
+  width: 28px;
+  height: 28px;
+} 
+
+ .cal__submitte__btn{
+    background-color: var(--Skinny-Jeans);
+} 
