@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caculator</title>
     <link rel="stylesheet" href="./styles.css">
-    <style src="./index.js" defer></style>
 </head>
 <body>
 <main>
     <section class="action">
         <div class="menu">
             <h4>Calculator</h4> 
-            <img class="btn" src="./img/up.svg" alt="Up Arrow">
+            <img class="btn toggle__menu" id="drop__menu" src="./img/up.svg" alt="Up Arrow">
         </div>
         <button type="reset" class="btn reset__btn">
             <img class="btn reset__btn--img" src="./img/reload.svg" alt="">
         </button>
         
     </section>
-      <nav class="nav__menu">
+      <nav class="nav__menu" id="nav__menu">
             <div class="nav__options">
                 <img  class="nav-icons"  src="./img/currency.svg" alt="currency">
                 <p>currency Converter</p>
@@ -38,8 +37,8 @@
             </div>
       </nav>
     <section class="results">
-        <div class="question results__options"></div>
-        <input type="text" class="answer results__options">
+        <div class="question results__options" id="results"></div>
+        <input type="text" class="answer results__options" id="calculation">
     </section>
     <section class="buttons">
         <button type="button" class="btn cal__btns">
@@ -103,8 +102,9 @@
         <button type="submit" class="btn cal__btns cal__submitte__btn">
             <img class="cal__btns--character cal__btns--img" src="./img/equals.svg" alt="equals">
         </button>
-    </section>
+    </section> 
 </main>
     
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -26,6 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--Alpine-Goat);
+    position: relative;
 }
 
 main{
@@ -53,6 +54,11 @@ main{
     font-size: 25px;
 }
 
+.toggle__menu{
+    width: 20px;
+    height: 20px;
+}
+
 .reset__btn{
     border: none;
     background-color:transparent;
@@ -69,15 +75,21 @@ main{
 }
 
 .nav__menu{
-    background-color: #FFFFFF;
+    background-color:var(--Alpine-Goat);
     border-radius: 4px;
     width:fit-content;
-    height: 25%;
+    height: 30%;
     padding: 12px;
     display: none;
     flex-direction: column;
     justify-content: space-evenly;
-    
+    position: absolute;
+    z-index: 10;
+    left: 20px;
+}
+
+.block {
+  display: flex !important;
 }
 
 .nav__options{
