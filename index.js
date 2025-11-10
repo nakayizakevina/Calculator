@@ -15,23 +15,27 @@ dropMenu.addEventListener("click", function(){
 let result = document.getElementById("results");
 let calculation = document.getElementById("calculation");
 let buttons = Array.from(document.getElementsByClassName("cal__btns"));
+const output = document.getElementById("output");
 
 buttons.map(button => {
     button.addEventListener("click", (e) => {
-        const value = e.target.innerText.trim(); 
-        switch(value) {
-            case "C":
-                calculation.innerText = "";
-                break;
-            case "=":
-                try {
-                    result.innerText = eval(calculation.innerText); 
-                } catch {
-                    result.innerText = "Error";
-                }
-                break;
+        console.log("Hello there am new here please") 
+        switch(e.target.innerText) {
+            case 'AC':
+            result.innerText = "";
+             break;
+             case '=':
+                
+              result.innerText += e.target.innerText;
+              break;
+                
             default:
-                calculation.innerText += value; 
+                calculation.value += e.target.innerText;
+               
+                 
         }
+
+        console.log(calculation);
+
     });
 });
