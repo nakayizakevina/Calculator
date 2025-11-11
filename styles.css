@@ -171,8 +171,13 @@ main{
 .cal__btns--img {
   width: 28px;
   height: 28px;
-} 
+}  
 
  .cal__submitte__btn{
     background-color: var(--Skinny-Jeans);
+    color: var(--White);
 } 
+
+.operator{
+    color: var(--Skinny-Jeans);
+}

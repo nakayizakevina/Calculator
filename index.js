@@ -19,14 +19,15 @@ const output = document.getElementById("output");
 
 buttons.map(button => {
     button.addEventListener("click", (e) => {
-        console.log("Hello there am new here please") 
+        // console.log("Hello there am new here please") 
         switch(e.target.innerText) {
             case 'AC':
-            result.innerText = "";
+              calculation.innerText = "";
+            // result.innerText = "";
              break;
+
              case '=':
-                
-              result.innerText += e.target.innerText;
+            result.innerText += e.target.innerText;
               break;
                 
             default:
